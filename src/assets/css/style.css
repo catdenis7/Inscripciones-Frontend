@@ -1,0 +1,17 @@
+/* Modify the background color */
+.navbar {
+    background-color: #717BFF;
+}
+/* Modify brand and text color */
+.navbar-text,
+.navbar-brand, 
+.navbar-link {
+    color: #FFFFFF !important;
+}
+
+.img-user-profile {
+    width: 49.43px;
+    height: 45.67px;
+    border-radius: 25px 25px 25px 25px;
+    border: 2px solid #FFFFFF;
+}

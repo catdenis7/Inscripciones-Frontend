@@ -32,9 +32,9 @@ export default function Navbar() {
                                     Otros Servicios
                                 </a>
                                 <ul className='dropdown-menu'>
-                                    <li><a className='dropdown-item disabled' href="#/"><i class="bi bi-lock-fill"></i> Bloqueos</a></li>
-                                    <li><a className='dropdown-item disabled' href="#/"><i class="bi bi-newspaper"></i> Maestro de Oferta </a></li>
-                                    <li><a className='dropdown-item disabled' href="#/"><i class="bi bi-calendar-week-fill"></i> Calendario Académico </a></li>
+                                    <li><a className='dropdown-item disabled' href="#/"><i className="bi bi-lock-fill"></i> Bloqueos</a></li>
+                                    <li><a className='dropdown-item disabled' href="#/"><i className="bi bi-newspaper"></i> Maestro de Oferta </a></li>
+                                    <li><a className='dropdown-item disabled' href="#/"><i className="bi bi-calendar-week-fill"></i> Calendario Académico </a></li>
                                 </ul>
                             </li>
                         </ul>

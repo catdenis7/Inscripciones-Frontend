@@ -7,7 +7,7 @@ export default function InicioMainPage() {
         <div className="Inicio">
             <Navbar />
             <header className="Inicio-header">
-                <img src={logo} className="App-logo" alt="logo" />
+               
                
                      <Home />
                 <p>

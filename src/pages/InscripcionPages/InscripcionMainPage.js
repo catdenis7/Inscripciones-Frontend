@@ -1,10 +1,17 @@
+import Chip from '@mui/material/Chip';
+// eslint-disable-next-line
+import Stack from '@mui/material/Stack';
 import Navbar from "../../components/Navbar";
-import Schedule from "../../components/Schedule";
-export default function LevantamientoHorario() {
+import PopoverInformation from "../../components/PopoverInformation";
+import Schedule from '../../components/Schedule';
+import AccordionContent from '../../components/AccordionContent';
+import CustomizedDialogs from '../../components/Dialog';
 
+export default function InscripcionMainPage() {
+  let popoverMessage = <p>Solo puedes adicionar un maximo de 2 materias</p>;
   let accordionContent = [
     {
-      materia: 'CONTABILIDAD (ADM200)',
+      materia: 'LENGUAJES FORMALES (ADM200)',
       datos: [
         {
           grupoDocente: 'SA - FLORES FLORES MARCOS OSCAR',
@@ -33,7 +40,7 @@ export default function LevantamientoHorario() {
       ]
     },
     {
-      materia: 'FÍSICA III (FIS200)',
+      materia: 'ECUACIONES DIFERENCIALES (FIS200)',
       datos: [
         {
           grupoDocente: 'SC - ROSALES FUENTES JORGE MARCELO',
@@ -62,7 +69,7 @@ export default function LevantamientoHorario() {
       ]
     },
     {
-      materia: 'PROGRAMACIÓN II (INF210)',
+      materia: 'ARQUITECTURA EN COMPUTADORAS (INF210)',
       datos: [
         {
           grupoDocente: 'SC -CONTRERAS VILLEGAS JUAN CARLOS',
@@ -96,30 +103,33 @@ export default function LevantamientoHorario() {
       <section className='background-body'>
         <div className='row'>
           <div className='col-9'>
-            <h1>Horario</h1>
+            <h1>Inscripciones</h1>
           </div>
           <div className='col-3'>
-            <p className='icons-right'>
-            <i class="bi bi-printer-fill"></i>
-            </p>
+            <PopoverInformation popoverMessage={popoverMessage} />
           </div>
           <div className='line'></div>
         </div>
-        
-        <div className='row'>
-          <div className='col-5'>
-            
-          </div>
-          <div className='col-7'>
-            <Schedule/>
-          </div>
-        </div> 
 
         <div className='row'>
-            <div className='col'>
-            <a href="http://localhost:3000" className="home-link">Volver al Inicio</a>  
-            </div>
-        </div>    
+          <div className='col'>
+            <h3>Materias Habilitadas:</h3>
+          </div>
+        </div>
+        <div className='row'>
+          <div className='col-5'>
+            <AccordionContent accordionContent={accordionContent} />
+          </div>
+          <div className='col-7'>
+            <Schedule></Schedule>
+          </div>
+        </div>
+        <div className='row'>
+          <div className='col'>
+            <CustomizedDialogs/>
+          </div>
+        </div>
+        
       </section>
     </div>
   );

@@ -64,7 +64,7 @@ export default function CustomizedDialogs() {
         <div>
             <div className='boton-style'>
                 <div className='d-grid gap-2 col-3 mx-auto'>
-                    <button type="button" class="btn btn-outline-primary btn-lg" onClick={handleClickOpen}>Primary</button>
+                    <button type="button" class="btn btn-outline-primary btn-lg" onClick={handleClickOpen}>Registrar Cambios</button>
                 </div>
             </div>
             <BootstrapDialog

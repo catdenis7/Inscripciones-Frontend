@@ -19,11 +19,11 @@ export default function Schedule() {
                     <tbody className='table-body'>
                         <tr>
                             <th scope="row">07:00-07:45</th>
-                            <td rowspan='2'>ADM-100</td>
-                            <td rowspan='3'>FIS-102</td>
-                            <td rowspan='2'>ADM-100</td>
-                            <td rowspan='3'>FIS-102</td>
-                            <td rowspan='2'>ADM-100</td>
+                            <td className='adm-100' rowspan='2'>ADM-100</td>
+                            <td className='fis-102' rowspan='3'>FIS-102</td>
+                            <td className='adm-100' rowspan='2'>ADM-100</td>
+                            <td className='fis-102'rowspan='3'>FIS-102</td>
+                            <td className='adm-100' rowspan='2'>ADM-100</td>
                             <td>Celda 6</td>
                         </tr>
                         <tr>
@@ -35,7 +35,7 @@ export default function Schedule() {
                             <td>Celda 1</td>
                             <td>Celda 3</td>
                             <td>Celda 5</td>
-                            <td rowspan='4'>ELC-102</td>
+                            <td className='elc-102' rowspan='4'>ELC-102</td>
                         </tr>
                         <tr>
                             <th scope="row">09:15-10:00</th>
@@ -126,11 +126,11 @@ export default function Schedule() {
                         </tr>
                         <tr>
                             <th scope="row">16:45-17:30</th>
-                            <td rowspan='2'>INF-120</td>
+                            <td className='inf-120' rowspan='2'>INF-120</td>
                             <td>Celda 2</td>
-                            <td rowspan='2'>INF-120</td>
+                            <td className='inf-120' rowspan='2'>INF-120</td>
                             <td>Celda 4</td>
-                            <td rowspan='2'>INF-120</td>
+                            <td className='inf-120' rowspan='2'>INF-120</td>
                             <td>Celda 6</td>
                         </tr>
                         <tr>
@@ -145,7 +145,7 @@ export default function Schedule() {
                             <td>Celda 2</td>
                             <td>Celda 3</td>
                             <td>Celda 4</td>
-                            <td>FIS-102</td>
+                            <td className='fis-102'>FIS-102</td>
                             <td>Celda 6</td>
                         </tr>
                         <tr>
@@ -160,9 +160,9 @@ export default function Schedule() {
                         <tr>
                             <th scope="row">20:30-21:15</th>
                             <td>Celda 1</td>
-                            <td rowspan='3'>MAT-102</td>
+                            <td className='mat-102' rowspan='3'>MAT-102</td>
                             <td>Celda 3</td>
-                            <td rowspan='3'>MAT-102</td>
+                            <td className='mat-102' rowspan='3'>MAT-102</td>
                             <td>Celda 5</td>
                             <td>Celda 6</td>
                         </tr>

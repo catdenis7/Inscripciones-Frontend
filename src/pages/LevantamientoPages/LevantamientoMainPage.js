@@ -1,5 +1,5 @@
 import Chip from '@mui/material/Chip';
-
+// eslint-disable-next-line
 import Stack from '@mui/material/Stack';
 import Navbar from "../../components/Navbar";
 import PopoverInformation from "../../components/PopoverInformation";
@@ -25,24 +25,17 @@ export default function levantamientoMainPage() {
         <div className='row'>
           <div className='col-9 my-2'>
             <h3>Materias Inscritas:</h3>
-
-            <div className='row'>
-              <div className='col'>
-                <Stack
-                  direction="row"
-                  justifyContent="flex-start"
-                  alignItems="baseline"
-                  spacing={1}
-                >
-                  <Chip label="ADM100 - ADMINISTRACIÓN" color="primary" />
-                  <Chip label="FIS102 - FÍSICA II" color="success" />
-                  <Chip label="INF120 - PROGRAMACIÓN I" color="info" />
-                  <Chip label="MAT102 - CÁLCULO II" color="warning" />
-                  <Chip label="ELC102 - PROGRAMACIÓN GRÁFICA" color="secondary" />
-                </Stack>
+            <section className='chip-section'>
+              <div className='row'>
+                <div className='col'>
+                  <Chip className='chip-item' label="ADM100 - ADMINISTRACIÓN" color="secondary" />
+                  <Chip className='chip-item' label="FIS102 - FÍSICA II" color="success" />
+                  <Chip className='chip-item' label="ELC102 - PROGRAMACIÓN GRÁFICA" color="primary" />
+                  <Chip className='chip-item' label="INF120 - PROGRAMACIÓN I" color="warning" />
+                  <Chip className='chip-item' label="MAT102 - CÁLCULO II" color="info" />
+                </div>
               </div>
-            </div>
-
+            </section>
           </div>
           <div className='col-3 my-2'>
             <h2>P.P.A.C. 80</h2>

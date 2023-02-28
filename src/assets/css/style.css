@@ -86,6 +86,16 @@ h3 {
   padding-right: 50px;
 }
 
+/* CHIP SECTION */
+.chip-section {
+  align-items: left;
+  margin-right: 150px;
+}
+
+.chip-section .chip-item {
+  margin: 0px 2px;
+}
+
 /* TABLA HORARIO */
 .table-style {
   margin-top: 5px;
@@ -108,4 +118,34 @@ h3 {
 .table-style .table-body th{
   color: #ffffff;
   background-color: #717bff;
+}
+
+.table-style .table-body .adm-100 {
+  text-align: center;
+  color: #ffffff;
+  background-color: #9c27b0;
+}
+
+.table-style .table-body .fis-102 {
+  text-align: center;
+  color: #ffffff;
+  background-color: #2e7d32;
+}
+
+.table-style .table-body .inf-120 {
+  text-align: center;
+  color: #ffffff;
+  background-color: #ed6c02;
+}
+
+.table-style .table-body .mat-102 {
+  text-align: center;
+  color: #ffffff;
+  background-color: #1976d2;
+}
+
+.table-style .table-body .elc-102 {
+  text-align: center;
+  color: #ffffff;
+  background-color: #0288d1;
 }

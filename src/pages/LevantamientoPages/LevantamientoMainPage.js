@@ -4,11 +4,100 @@ import Stack from '@mui/material/Stack';
 import Navbar from "../../components/Navbar";
 import PopoverInformation from "../../components/PopoverInformation";
 import Schedule from '../../components/Schedule';
+import AccordionContent from '../../components/AccordionContent';
 
 export default function levantamientoMainPage() {
   let popoverMessage = <p>Ten en cuenta: <br></br>
     - Para realizar el levantamiento de dos materias, P.P.A.C. {'>'}= 60 <br></br>
     - Para realizar el levantamiento de una materia, P.P.A.C. {'>'}=51 y P.P.A.C. {'<'} 60 <br></br></p>;
+  let accordionContent = [
+    {
+      materia: 'CONTABILIDAD (ADM200)',
+      datos: [
+        {
+          grupoDocente: 'SA - FLORES FLORES MARCOS OSCAR',
+          dias: '|LUN 08:30-10:00 236-25|MIE 08:30-10:00 236-25|VIE 08:30-10:00 236-25',
+          cupo: '10',
+          className: 'select-right-option',
+          cardBody: 'card-body text-primary',
+          state: 'checked',
+        },
+        {
+          grupoDocente: 'MV - CESPEDES ROJAS GUALBERTO',
+          dias: '|LUN 21:15-22:45 236-25|MIE 21:15-22:45 236-25|VIE 21:15-22:45 236-25',
+          cupo: '0',
+          className: 'select-no-cupo',
+          cardBody: 'card-body text-secondary',
+          state: 'disabled',
+        },
+        {
+          grupoDocente: 'SB - OROSCO GOMEZ RUBEN',
+          dias: '|LUN 18:15-19:45 236-25|MIE 19:45-21:15 236-25|VIE 18:15-19:45 236-25',
+          cupo: '12',
+          className: 'select-cross-schedule',
+          cardBody: 'card-body text-primary',
+          state: 'checked',
+        },
+      ]
+    },
+    {
+      materia: 'FÍSICA III (FIS200)',
+      datos: [
+        {
+          grupoDocente: 'SC - ROSALES FUENTES JORGE MARCELO',
+          dias: '|LUN 11:30-13:00 236-25|MIE 11:30-13:00 236-25|VIE 11:30-13:00 236-25|VIE 21:15-22:45 236-25',
+          cupo: '10',
+          className: 'select-right-option',
+          cardBody: 'card-body text-primary',
+          state: 'checked',
+        },
+        {
+          grupoDocente: 'SB - ARGOTE CLAROS IRMA ISABEL',
+          dias: '|LUN 07:00-08:30 236-25|LUN 11:30-13:45 236-25|VIE 11:30-13:45 236-25',
+          cupo: '5',
+          className: 'select-cross-schedule',
+          cardBody: 'card-body text-primary',
+          state: 'checked',
+        },
+        {
+          grupoDocente: 'SA - SENA AVENDAÑO EULOGIO',
+          dias: '|MAR 10:45-13:00 236-25|MIE 16:45-18:15 236-25|JUE 10:45-13:00 236-25',
+          cupo: '12',
+          className: 'select-cross-schedule',
+          cardBody: 'card-body text-primary',
+          state: 'checked',
+        },
+      ]
+    },
+    {
+      materia: 'PROGRAMACIÓN II (INF210)',
+      datos: [
+        {
+          grupoDocente: 'SC -CONTRERAS VILLEGAS JUAN CARLOS',
+          dias: '|MAR 07:00-09:15 236-25|JUE 07:00-09:15 236-25',
+          cupo: '15',
+          className: 'select-no-cupo',
+          cardBody: 'card-body text-secondary',
+        },
+        {
+          grupoDocente: 'SA -CONTRERAS VILLEGAS JUAN CARLOS',
+          dias: '|MAR 13:45-16:00 236-25|JUE 13:45-16:00 236-25',
+          cupo: '15',
+          className: 'select-no-cupo',
+          cardBody: 'card-body text-secondary',
+          state: 'disabled',
+        },
+        {
+          grupoDocente: 'SD - LOPEZ NEGRETTY MARY DUNNIA',
+          dias: '|LUN 18:15-20:30 236-25|VIE 18:15-20:30 236-25',
+          cupo: '12',
+          className: 'select-cross-schedule',
+          cardBody: 'card-body text-primary',
+          state: "checked",
+        },
+      ]
+    },
+  ]
   return (
     <div className='levantamiento-main'>
       <Navbar />
@@ -48,53 +137,20 @@ export default function levantamientoMainPage() {
           </div>
         </div>
         <div className='row'>
-          <div className='col-3'>
-            <section className='menu-mateSSrias'>
-              <div className="accordion" id="accordionExample">
-
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="headingOne">
-                    <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Accordion Item #1
-                    </button>
-                  </h2>
-                  <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div className="accordion-body">
-                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                  </div>
-                </div>
-
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="headingTwo">
-                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Accordion Item #2
-                    </button>
-                  </h2>
-                  <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div className="accordion-body">
-                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                  </div>
-                </div>
-
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="headingThree">
-                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Accordion Item #3
-                    </button>
-                  </h2>
-                  <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                    <div className="accordion-body">
-                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
+          <div className='col-5'>
+            <AccordionContent accordionContent={accordionContent} />
           </div>
-          <div className='col-9'>
+          <div className='col-7'>
             <Schedule></Schedule>
+          </div>
+        </div>
+        <div className='row'>
+          <div className='col'>
+            <div className='boton-style'>
+              <div className='d-grid gap-2 col-3 mx-auto'>
+                <button type="button" class="btn btn-outline-primary btn-lg">Primary</button>
+              </div>
+            </div>
           </div>
         </div>
       </section>

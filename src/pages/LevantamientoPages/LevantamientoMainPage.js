@@ -5,6 +5,7 @@ import Navbar from "../../components/Navbar";
 import PopoverInformation from "../../components/PopoverInformation";
 import Schedule from '../../components/Schedule';
 import AccordionContent from '../../components/AccordionContent';
+import CustomizedDialogs from '../../components/Dialog';
 
 export default function levantamientoMainPage() {
   let popoverMessage = <p>Ten en cuenta: <br></br>
@@ -146,13 +147,10 @@ export default function levantamientoMainPage() {
         </div>
         <div className='row'>
           <div className='col'>
-            <div className='boton-style'>
-              <div className='d-grid gap-2 col-3 mx-auto'>
-                <button type="button" class="btn btn-outline-primary btn-lg">Primary</button>
-              </div>
-            </div>
+            <CustomizedDialogs/>
           </div>
         </div>
+        
       </section>
     </div>
   );

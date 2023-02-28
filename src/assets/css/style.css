@@ -76,6 +76,12 @@ h3 {
   padding: 5px 5px;
   color: #717bff;
 }
+
+.icon-close i{
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 100px;
+}
 /* POPOVER DE INFORMACION */
 .popover-message {
   margin-top: 15px;

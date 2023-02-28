@@ -1,5 +1,6 @@
 import Navbar from '../../components/Navbar';
 import logo from '../../logo.svg';
+import Home from '../../components/Home';
 
 export default function InicioMainPage() {
     return (
@@ -7,8 +8,12 @@ export default function InicioMainPage() {
             <Navbar />
             <header className="Inicio-header">
                 <img src={logo} className="App-logo" alt="logo" />
+               
+                     <Home />
                 <p>
-                    PAGINA EN CONSTRUCCIÓN
+               
+
+                    {/* PAGINA EN CONSTRUCCIÓN */}
                 </p>
             </header>
         </div>

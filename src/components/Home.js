@@ -11,7 +11,7 @@ export default function Home() {
     return (
         <>
     <Box Col='3' className='home-box'>
-         <CardIcon icono={levantamiento}  />
+         <CardIcon  />
          <CardIcon />
          <CardIcon />
         

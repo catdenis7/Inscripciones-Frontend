@@ -1,2 +1,7 @@
 .home-box {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
 }

@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 
-// Import all of Bootstrap's JS
+// eslint-disable-next-line
 import * as bootstrap from 'bootstrap';
 
 

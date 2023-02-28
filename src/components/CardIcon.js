@@ -10,7 +10,7 @@ export default function CardIcon() {
     <React.Fragment>
   
       <Box sx={{ minWidth: 275 }}>
-      <CardMedia
+      <CardMedia className='card-content'
           component="img"
           height="194"
           width="100"

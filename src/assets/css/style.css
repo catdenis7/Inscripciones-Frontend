@@ -1,3 +1,4 @@
+/*            NAVBAR          */
 /* Modify the background color */
 .navbar {
   background-color: #717bff;
@@ -16,70 +17,135 @@
   border: 2px solid #ffffff;
 }
 
+/* LINEA DEBAJO DEL TITULO */
 .background-body .line {
-    position: center;
-    width: 95%;
-    height: 3px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 5px;
-    margin-bottom: 30px;
-    background: #717bff;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
- 
+  position: center;
+  width: 95%;
+  height: 3px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  background: #717bff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.background-body h1,h3{
-    text-align: left;
-    margin-left: 30px;
-    color: #717bff;
-    position: relative;
-    margin-top: 20px;
-    margin-bottom: 5px;
-    padding: 5PX 0PX;
-    
+/* FORMATO DE TEXTO DE TITULOS Y SUBTITULOS */
+
+.background-body h1,
+h3 {
+  text-align: left;
+  margin-left: 30px;
+  color: #717bff;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  padding: 5px 0px;
 }
 
-.background-body h2{
-    text-align: right;
-    margin-left: 30px;
-    color: #717bff;
-    position: relative;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding: 0px 28px;    
+.background-body h2 {
+  text-align: right;
+  margin-left: 30px;
+  color: #717bff;
+  position: relative;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 0px 28px;
 }
 
-.background-body h6{
-    text-align: right;
-    margin-left: 30px;
-    color: #000000;
-    position: relative;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding: 0px 28px;    
+.background-body h6 {
+  text-align: right;
+  margin-left: 30px;
+  color: #000000;
+  position: relative;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 0px 28px;
 }
 
-.icons-right i{
-    text-decoration: none;
-    font-size: 30px;
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 30px;
-    margin-bottom: 5px;
-    margin-right: 28px;
-    margin-left: 0px;
-    position: relative;
-    padding: 5px 5px;
-    color: #717bff;  
-  }
+.icons-right i {
+  text-decoration: none;
+  font-size: 30px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  margin-right: 28px;
+  margin-left: 0px;
+  position: relative;
+  padding: 5px 5px;
+  color: #717bff;
+}
+/* POPOVER DE INFORMACION */
+.popover-message {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: 50px;
+  margin-left: 15px;
+  text-align: left;
+  padding-right: 50px;
+}
 
-  .popover-message {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-right: 50px;
-    margin-left: 15px;
-    text-align: left;
-    padding-right: 50px;
-    
-  }
+/* CHIP SECTION */
+.chip-section {
+  align-items: left;
+  margin-right: 150px;
+}
+
+.chip-section .chip-item {
+  margin: 0px 2px;
+}
+
+/* TABLA HORARIO */
+.table-style {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 30px;
+  margin-left: 100px;
+  padding: 10px 10px;
+  
+
+  border-radius: 20px;
+  box-shadow: 0px 4px 66px rgba(0, 0, 0, 0.25);
+}
+.table-style .table-header{
+  background-color: #717bff;
+}
+.table-style .table-header th{
+  color: #ffffff;
+}
+
+.table-style .table-body th{
+  color: #ffffff;
+  background-color: #717bff;
+}
+
+.table-style .table-body .adm-100 {
+  text-align: center;
+  color: #ffffff;
+  background-color: #9c27b0;
+}
+
+.table-style .table-body .fis-102 {
+  text-align: center;
+  color: #ffffff;
+  background-color: #2e7d32;
+}
+
+.table-style .table-body .inf-120 {
+  text-align: center;
+  color: #ffffff;
+  background-color: #ed6c02;
+}
+
+.table-style .table-body .mat-102 {
+  text-align: center;
+  color: #ffffff;
+  background-color: #1976d2;
+}
+
+.table-style .table-body .elc-102 {
+  text-align: center;
+  color: #ffffff;
+  background-color: #0288d1;
+}

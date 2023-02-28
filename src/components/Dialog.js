@@ -9,6 +9,7 @@ import DialogActions from '@mui/material/DialogActions';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import Typography from '@mui/material/Typography';
+import { Link } from 'react-router-dom';
 
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
@@ -25,22 +26,22 @@ function BootstrapDialogTitle(props) {
 
     return (
         <DialogTitle sx={{ m: 0, p: 2 }} {...other}>
-        {children}
-        {onClose ? (
-          <IconButton
-            aria-label="close"
-            onClick={onClose}
-            sx={{
-              position: 'absolute',
-              right: 8,
-              top: 8,
-              color: (theme) => theme.palette.grey[500],
-            }}
-          >
-            <CloseIcon />
-          </IconButton>
-        ) : null}
-      </DialogTitle>
+            {children}
+            {onClose ? (
+                <IconButton
+                    aria-label="close"
+                    onClick={onClose}
+                    sx={{
+                        position: 'absolute',
+                        right: 8,
+                        top: 8,
+                        color: (theme) => theme.palette.grey[500],
+                    }}
+                >
+                    <CloseIcon />
+                </IconButton>
+            ) : null}
+        </DialogTitle>
     );
 }
 
@@ -60,11 +61,11 @@ export default function CustomizedDialogs() {
     };
 
     return (
-        <div>            
+        <div>
             <div className='boton-style'>
-              <div className='d-grid gap-2 col-3 mx-auto'>
-                <button type="button" class="btn btn-outline-primary btn-lg" onClick={handleClickOpen}>Primary</button>
-              </div>
+                <div className='d-grid gap-2 col-3 mx-auto'>
+                    <button type="button" class="btn btn-outline-primary btn-lg" onClick={handleClickOpen}>Primary</button>
+                </div>
             </div>
             <BootstrapDialog
                 onClose={handleClose}
@@ -72,18 +73,21 @@ export default function CustomizedDialogs() {
                 open={open}
             >
                 <BootstrapDialogTitle id="customized-dialog-title" onClose={handleClose}>
-                ¿Estas seguro que quieres registrar los cambios?
+                    ¿Estas seguro que quieres registrar los cambios?
                 </BootstrapDialogTitle>
                 <DialogContent dividers>
                     <Typography gutterBottom>
-                    Una vez registrados ya no podrás realizar modificaciones,
-                    ¿Deseas realizarlos de todas formas?
+                        Una vez registrados ya no podrás realizar modificaciones,
+                        ¿Deseas realizarlos de todas formas?
                     </Typography>
                 </DialogContent>
                 <DialogActions>
-                    <Button autoFocus onClick={handleClose}>
-                        Guardar Cambios
-                    </Button>
+                    <Link className='nav-link active' to='/levantamiento/horario'>
+                        <Button autoFocus onClick={handleClose}>
+                            Guardar Cambios
+                        </Button>
+                    </Link>
+
                 </DialogActions>
             </BootstrapDialog>
         </div>

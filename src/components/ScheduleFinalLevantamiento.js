@@ -1,6 +1,6 @@
 import '../assets/css/style.css';
 
-export default function Schedule() {
+export default function ScheduleFinalLevantamiento() {
     return (
         <>
             <section className='table-style'>
@@ -40,7 +40,7 @@ export default function Schedule() {
                         <tr>
                             <th scope="row">09:15-10:00</th>
                             <td></td>
-                            <td></td>
+                            <td className='inf-210' rowspan='3'>INF-210</td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -63,11 +63,11 @@ export default function Schedule() {
                         </tr>
                         <tr>
                             <th scope="row">11:30-12:15</th>
+                            <td className='fis-200' rowspan='2'>FIS-200</td>
                             <td></td>
+                            <td className='fis-200' rowspan='2'>FIS-200</td>
                             <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td className='fis-200' rowspan='2'>FIS-200</td>
                             <td></td>
                         </tr>
                         <tr>
@@ -170,7 +170,7 @@ export default function Schedule() {
                             <th scope="row">21:15-22:00</th>
                             <td></td>
                             <td></td>
-                            <td></td>
+                            <td className='fis-200' rowspan='2'>FIS-200</td>
                             <td></td>
                         </tr>
                         <tr>

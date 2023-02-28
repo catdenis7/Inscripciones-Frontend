@@ -1,5 +1,10 @@
 import Navbar from "../../components/Navbar";
+import PopoverInformation from "../../components/PopoverInformation";
+
 export default function levantamientoMainPage() {
+  let popoverMessage = <p>Ten en cuenta: <br></br>
+  - Para realizar el levantamiento de dos materias, P.P.A.C. {'>'}= 60 <br></br>
+  - Para realizar el levantamiento de una materia, P.P.A.C. {'>'}=51 y P.P.A.C. {'<'} 60 <br></br></p>;
   return (
     <div className='levantamiento-main'>
       <Navbar />
@@ -9,9 +14,7 @@ export default function levantamientoMainPage() {
             <h1>Levantamiento</h1>
           </div>
           <div className='col-3'>
-            <p className='icons-right'>
-              <i className="bi bi-info-circle-fill"></i>
-            </p>
+            <PopoverInformation popoverMessage={popoverMessage}/>
           </div>
           <div className='line'></div>
         </div>
